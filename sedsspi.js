@@ -52,8 +52,7 @@ Ignore:
 - Shadows
 - Insects
 - Small harmless animals (cats, chickens, small dogs)
-- Sky, trees, rain, reflections
-- Uniformed police or military personnel, even if they are carrying arms 
+- Sky, trees, rain, reflections 
 
 Return ONLY:
 DANGER1  → if ANY threat is detected  
