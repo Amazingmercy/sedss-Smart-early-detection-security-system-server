@@ -3,6 +3,7 @@ const multer = require("multer");
 const axios = require("axios");
 const fs = require("fs-extra");
 const path = require("path");
+require("dotenv").config();
 
 const app = express();
 
@@ -10,7 +11,7 @@ const app = express();
 const UPLOAD_DIR = path.join(__dirname, "uploads");
 const ALERT_LOG = path.join(__dirname, "alerts.json");
 
-const GOOGLE_API_KEY = "AIzaSyCCf45kTfKvLmhclGleylsjaX8R1r9gQWk";
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 const GENAI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GOOGLE_API_KEY}`;
 
 // Ensure dirs exist
